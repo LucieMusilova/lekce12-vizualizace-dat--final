@@ -1,6 +1,6 @@
 let zakladniInfo = null;
 
-fetch('https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/zakladni-prehled.json')
+fetch('https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/zakladni-prehled.min.json')
     .then(response => response.json())
     .then(data => {
         // preulozeni dat do globalni promenne a vypsani do konzole
