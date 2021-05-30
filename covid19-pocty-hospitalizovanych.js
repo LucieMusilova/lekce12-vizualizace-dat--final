@@ -8,7 +8,7 @@ fetch('https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/hospitalizace.min.jso
 
         data.data.forEach(zaznam => {
           dataHosp[0].push(zaznam.datum);
-          dataHosp[1].push(zaznam.pacient_prvni_zaznam);
+          dataHosp[1].push(zaznam.pocet_hosp);
         });
 
         console.log(dataHosp);
