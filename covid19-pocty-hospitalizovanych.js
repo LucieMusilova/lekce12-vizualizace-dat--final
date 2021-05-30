@@ -11,8 +11,6 @@ fetch('https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/hospitalizace.min.jso
           dataHosp[1].push(zaznam.pocet_hosp);
         });
 
-        console.log(dataHosp);
-
         var graf = c3.generate({
           bindto: '#js-pocet-hosptalizovanych',
           data: {
