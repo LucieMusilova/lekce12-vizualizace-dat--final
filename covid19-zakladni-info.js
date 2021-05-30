@@ -39,5 +39,5 @@ fetch('https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/zakladni-prehled.min.
         // vysledek validace vypis do konzole pomoci console.log()
     })
     .catch((error) => {
-        console.error('Chyba aplikace: ', error);
+        console.error('Chyba aplikace (zakladni info): ', error);
     });
