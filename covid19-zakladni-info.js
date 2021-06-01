@@ -5,7 +5,6 @@ fetch('https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/zakladni-prehled.min.
     .then(data => {
         // preulozeni dat do globalni promenne a vypsani do konzole
         zakladniInfo = data;
-        console.log(zakladniInfo);
 
         // pridani data upravy
         let datumUpravy = new Date(zakladniInfo.modified);

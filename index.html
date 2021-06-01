@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Vizualizace dat</title>
 	<link rel="stylesheet" href="style.css">
+	
+	<!-- Load c3.css -->
+	<link href="vendor/c3/c3.min.css" rel="stylesheet">
 </head>
 <body>
 	<h1>Vizualizace dat + práce s datovým API</h1>
@@ -20,6 +23,16 @@
 		Očkovaných osob k <span id="js-ockovani-datum">–</span>: <strong id="js-ockovani">–</strong>
 	</p>
 
+	<h2>Počet hospitalizovaných</h2>
+
+	<div id="js-pocet-hosptalizovanych"></div>
+
 	<script src="covid19-zakladni-info.js"></script>
+
+	<!-- Load d3.js and c3.js -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="vendor/c3/c3.min.js"></script>
+	
+	<script src="covid19-pocty-hospitalizovanych.js"></script>
 </body>
 </html>
